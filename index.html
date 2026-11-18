@@ -3,35 +3,57 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ConsultReady – Online-Test für Unternehmensberatungen üben</title>
-<meta name="description" content="Trainiere die Online-Assessments der Unternehmensberatungen: Kognitivtest mit 80 Fragen, Zahlenreihen, Würfelnetze, Syllogismen, Analogien und spielbasiertes Problemlösen – mit Lösungsweg zu jeder Aufgabe.">
+<title>ConsultReady – Online-Assessment der Unternehmensberatung üben</title>
+<meta name="description" content="Kostenlose Trainer und Ratgeber für die Online-Tests der Unternehmensberatungen: Kognitivtest, Zahlenreihen, Würfelnetze, Syllogismen, Textaufgaben – mit Lösungsweg. Dazu die App mit kompletten Simulationen.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <link rel="icon" href="img/icon.png">
+<script src="js/engine.js" defer></script>
+<script src="js/trainer.js" defer></script>
 </head>
 <body>
 <div class="wrap">
   <header class="nav">
     <a class="brand" href="./">ConsultReady</a>
-    <nav><a class="small" href="support.html">Support</a><a class="small" href="datenschutz.html">Datenschutz</a></nav>
+    <nav><a class="small" href="trainer.html">Trainer</a><a class="small" href="ratgeber.html">Ratgeber</a><a class="small" href="support.html">Support</a></nav>
   </header>
 
-  <div class="hero">
+  <div class="hero" id="app">
     <div>
       <div class="label">Für Bewerbungen in Deutschland</div>
       <h1>Bestehe den Online-Test deiner Wunschberatung.</h1>
       <p class="lead">Alle Aufgabentypen der Consulting-Assessments, ein Lösungsweg zu jeder Aufgabe und Simulationen unter echtem Zeitdruck.</p>
-      <a class="cta" href="#">Bald im App Store</a>
-      <p class="note">Kostenlos starten · 5 Aufgaben pro Typ und Tag · eine Simulation gratis</p>
+      <a class="cta" href="#probieren">Jetzt kostenlos ausprobieren</a>
+      <p class="note">App bald im App Store · kostenlos starten · 5 Aufgaben pro Typ und Tag</p>
     </div>
     <img src="img/01-heute.png" alt="Startseite der App mit Testbereitschaft und Tagesempfehlung">
   </div>
 
+  <section id="probieren">
+    <div class="label">Live ausprobieren</div>
+    <h2>Fünf Aufgaben. Jetzt.</h2>
+    <p class="lead">Gemischte Aufgaben aus dem Kognitivtest-Format – mit Lösungsweg nach jeder Antwort. Bei jedem Start neu erzeugt.</p>
+    <div class="cr-trainer" data-cats="numberSeries,letters,wordProblems,cubeNet,deductive,ruleChain,wordSkills,ages" data-count="5" data-mode="practice"></div>
+  </section>
+
   <section>
-    <div class="label">Simulationen</div>
+    <div class="label">Kostenlose Trainer</div>
+    <h2>Jeder Aufgabentyp einzeln.</h2>
+    <div class="cards">
+      <a href="kognitivtest-schnelltest.html"><span class="pill">Simulation</span><h3>Kognitivtest-Schnelltest</h3><p>20 Fragen in 7,5 Minuten – mit Triage-Auswertung.</p></a>
+      <a href="zahlenreihen.html"><span class="pill">Logik</span><h3>Zahlenreihen</h3><p>Differenzen, Faktoren, Primzahlen.</p></a>
+      <a href="textaufgaben.html"><span class="pill">Zahlen</span><h3>Textaufgaben & Altersrätsel</h3><p>Zeit, Dreisatz, Brüche, Altersketten.</p></a>
+      <a href="wuerfelnetze.html"><span class="pill">Logik</span><h3>Würfelnetze</h3><p>Gegenüberliegende Flächen erkennen.</p></a>
+      <a href="buchstabenlogik.html"><span class="pill">Logik</span><h3>Buchstabenlogik</h3><p>Alphabet, Verschieben, Reihenfolge.</p></a>
+      <a href="trainer.html"><span class="pill">Alle Trainer</span><h3>11 Trainer & Werkzeuge</h3><p>Syllogismen, Wortschatz, Regelketten, Matrizen und mehr.</p></a>
+    </div>
+  </section>
+
+  <section>
+    <div class="label">Simulationen in der App</div>
     <h2>Fünf Testformate.<br>Jedes mit eigener Strategie.</h2>
-    <p class="lead">Online-Assessments unterscheiden sich je nach Beratung stark – in Aufgabentypen, Tempo und Regeln. ConsultReady simuliert die Formate, die Bewerber aus deutschen Büros berichten, unter echtem Zeitdruck und wertet sie nach Aufgabentyp aus.</p>
+    <p class="lead">Online-Assessments unterscheiden sich je nach Beratung stark – in Aufgabentypen, Tempo und Regeln. Die App simuliert die Formate, die Bewerber aus deutschen Büros berichten, unter echtem Zeitdruck und wertet sie nach Aufgabentyp aus.</p>
     <table>
       <tr><td>Kognitivtest</td><td>80 kurze Logik-, Sprach- und Zahlenaufgaben in 30 Minuten, freies Springen, keine Minuspunkte. Mit Triage-Training: Was löst du sofort, was überspringst du?</td></tr>
       <tr><td>Solve-Format</td><td>Spielbasiertes Problemlösen: Datenrecherche mit Hypothesen, Optimierung unter Nebenbedingungen, Ökosystem.</td></tr>
@@ -39,19 +61,6 @@
       <tr><td>Analytischer Test</td><td>Datenanalyse, Kopfrechnen und Zahlenreihen mit Business-Bezug.</td></tr>
       <tr><td>SHL-Format</td><td>Der klassische Eignungstest vieler weiterer Beratungen und der Big 4.</td></tr>
     </table>
-  </section>
-
-  <section>
-    <div class="label">14 Aufgabentypen</div>
-    <h2>Alles, was im Test drankommt.</h2>
-    <div class="grid">
-      <div><h3>Zahlen</h3><p>Prozent- und Tabellenaufgaben, Datenanalyse mit Diagrammen, Kopfrechnen.</p></div>
-      <div><h3>Logik</h3><p>Zahlenreihen, Matrizen, Syllogismen, Würfelnetze und Regelketten.</p></div>
-      <div><h3>Sprache & Urteil</h3><p>Kritisches Lesen (wahr / falsch / unbestimmbar), Analogien, Situational Judgement.</p></div>
-      <div><h3>Spielbasiert</h3><p>Forschungsstudie, Optimierung unter Nebenbedingungen und Ökosystem – für das Solve-Format.</p></div>
-      <div><h3>Lösungswege</h3><p>Zu jeder Aufgabe: Rechenweg, Strategie und deine Zeit im Vergleich zum Zielwert.</p></div>
-      <div><h3>Fehlertraining</h3><p>Falsch gelöste Aufgaben kommen wieder, bis sie sitzen.</p></div>
-    </div>
     <div class="shots">
       <img src="img/03-simulation.png" alt="Simulation mit Würfelnetz-Aufgabe">
       <img src="img/04-loesungsweg.png" alt="Lösungsweg einer Regelkette">
@@ -59,8 +68,18 @@
     </div>
   </section>
 
+  <section>
+    <div class="label">Ratgeber</div>
+    <h2>Wissen, was kommt.</h2>
+    <div class="cards">
+      <a href="online-assessment-beratung.html"><span class="pill">Überblick</span><h3>Alle Tests im Überblick</h3><p>Welche Beratung welches Format nutzt.</p></a>
+      <a href="bcg-kognitivtest.html"><span class="pill">Kognitivtest</span><h3>80 Fragen in 30 Minuten</h3><p>Aufgabentypen, Triage, typische Fallen.</p></a>
+      <a href="vorbereitungsplan.html"><span class="pill">Plan</span><h3>Dein Vorbereitungsplan</h3><p>Testdatum und Lernzeit wählen – Plan Tag für Tag.</p></a>
+    </div>
+  </section>
+
   <footer>
-    <a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a><a href="support.html">Support</a>
+    <a href="trainer.html">Trainer</a><a href="ratgeber.html">Ratgeber</a><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a><a href="support.html">Support</a>
     <p style="margin-top:14px">ConsultReady ist ein unabhängiges Trainingsangebot ohne Verbindung zu den Unternehmen, deren Testformate nachgebildet werden. Alle Aufgaben sind eigenständig entwickelt.</p>
   </footer>
 </div>
